@@ -3,9 +3,10 @@
 import React from "react";
 import Countdown from "react-countdown";
 
-// Set the target date to 2 days from now
+// Set the target date to every monday at 12:00
 const targetDate = new Date();
-targetDate.setDate(targetDate.getDate() + 2);
+targetDate.setDate(targetDate.getDate() + (targetDate.getDay() === 0 ? 1 : 7));
+targetDate.setHours(0, 0, 0, 0);
 
 // Counter for each time unit
 const TimeUnit = ({ value, unit }: { value: string; unit: string }) => {
@@ -18,7 +19,7 @@ const TimeUnit = ({ value, unit }: { value: string; unit: string }) => {
         {digits.map((digit, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center w-10 h-14 bg-zinc-800 rounded border border-zinc-700 relative overflow-hidden"
+            className="flex flex-col items-center justify-center w-10 h-14 bg-zinc-500 rounded border border-zinc-700 relative overflow-hidden"
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="text-2xl font-bold text-white">{digit}</span>

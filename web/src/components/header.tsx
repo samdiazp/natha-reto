@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
-import { CountdownTimer } from './countdown-timer';
+import React from "react";
+import Image from "next/image";
+import { CountdownTimer } from "./countdown-timer";
 
 export const Header = () => {
   return (
-    <header className="bg-zinc-900 text-white py-4 border-b border-zinc-800">
+    <header className=" py-4 border-b">
       <div className="container-pa">
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="w-full max-w-xs">
@@ -18,11 +18,8 @@ export const Header = () => {
           </div>
 
           <div className="w-full text-center">
-            <h2 className="text-xl mb-2">Esta Oferta Termina en:</h2>
+            <h2 className="text-xl mb-2 capitalize">EL RETO COMIENZA EN:</h2>
             <CountdownTimer />
-            <p className="text-sm mt-4 text-zinc-400">
-              Las puertas se cerrarán completamente cuando el contador llegue a cero
-            </p>
           </div>
         </div>
       </div>

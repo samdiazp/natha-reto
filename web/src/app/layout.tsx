@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "SoyNathaFit",
-  description: "Soy Nathal y este es mi reto",
+  description: "Te reto por 30 días a convertirte en tu mejor versión",
 };
 
 export default function RootLayout({
@@ -20,12 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark">
+    <html lang="es">
       <head>
         <link rel="icon" href="/images/logo.webp" />
       </head>
       <body
-        className={`${inter.variable} ${montserrat.variable} font-sans bg-black text-slate-100 antialiased`}
+        className={`${inter.variable} ${montserrat.variable} font-sans antialiased`}
       >
         {children}
       </body>
