@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Countdown from 'react-countdown';
+import React from "react";
+import Countdown from "react-countdown";
 
 // Set the target date to 2 days from now
 const targetDate = new Date();
 targetDate.setDate(targetDate.getDate() + 2);
 
 // Counter for each time unit
-const TimeUnit = ({ value, unit }: { value: string, unit: string }) => {
+const TimeUnit = ({ value, unit }: { value: string; unit: string }) => {
   // Split the value into digits to display individually
-  const digits = value.toString().padStart(2, '0').split('');
+  const digits = value.toString().padStart(2, "0").split("");
 
   return (
     <div className="flex flex-col items-center">
@@ -32,8 +32,19 @@ const TimeUnit = ({ value, unit }: { value: string, unit: string }) => {
   );
 };
 
+type CountdownRendererProps = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
 // Renderer for the countdown
-const renderer = ({ days, hours, minutes, seconds }: any) => {
+const renderer = ({
+  days,
+  hours,
+  minutes,
+  seconds,
+}: CountdownRendererProps) => {
   return (
     <div className="flex justify-center space-x-4 py-2">
       <TimeUnit value={days.toString()} unit="Días" />
