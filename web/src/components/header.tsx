@@ -11,9 +11,9 @@ export const Header = () => {
             <Image
               src="/images/logo.webp"
               alt="Piedra Angular Logo"
-              width={200}
-              height={60}
-              className="w-full h-auto"
+              className="w-full"
+              width={480}
+              height={480}
             />
           </div>
 
