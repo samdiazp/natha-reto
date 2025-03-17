@@ -1,15 +1,31 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export const HeroSection = () => {
+  const meses = [
+    "primer",
+    "segundo",
+    "tercer",
+    "cuarto",
+    "quinto",
+    "sexto",
+    "séptimo",
+    "octavo",
+    "noveno",
+    "décimo",
+    "onceavo",
+    "doceavo",
+  ];
+
+  const actualMonth = meses[new Date().getMonth()];
+  const actualYear = new Date().getFullYear();
+
   return (
-    <section className="py-16">
+    <section>
       <div className="container-pa">
         <div className="flex flex-col items-center text-center space-y-8">
           <div className="space-y-4 max-w-3xl">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-              Ya estamos en el tercer mes de 2025...
+              Ya estamos en el {actualMonth} mes de {actualYear}...
               <br />
               <span className="text-xl sm:text-2xl md:text-3xl text-zinc-400">
                 ¿Y qué has logrado hasta ahora?

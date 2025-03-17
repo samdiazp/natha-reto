@@ -30,12 +30,12 @@ const INFO = [
 
 export const Info = () => {
   return (
-    <section className="py-16">
+    <section>
       <div className="container-pa">
         <h2 className="text-4xl font-bold text-center mb-14">
           ¿QUÉ ES EL RETO MASIVO ONLINE?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12 gap-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12 gap-20">
           {INFO.map((item, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="h-32 flex items-center justify-center mb-4">

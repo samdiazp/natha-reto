@@ -23,8 +23,8 @@ export const Footer = () => {
             <CountdownTimer />
           </div>
 
-          <Button asChild className="btn-primary text-lg bg-[#9dd8e7]">
-            <Link href="https://pay.hotmart.com/E98492758V?off=4qdhi7n0&checkoutMode=10">
+          <Button asChild className="btn-primary text-lg bg-[#328fa6]">
+            <Link href="https://wa.me/14079859084?text=Hola%2C%20quisiera%20mas%20informacion%20acerca%20del%20reto%20masivo%20online.">
               ACEPTO EL RETO
             </Link>
           </Button>

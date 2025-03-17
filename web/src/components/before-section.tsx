@@ -31,10 +31,7 @@ export const BeforeSection = () => {
   return (
     <section>
       <div className="container-pa">
-        <h2 className="text-4xl font-bold text-center mb-14">
-          RESULTADOS DE LOS RETOS
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12">
           {IMAGES.map((image, index) => (
             <Image
               key={index}
